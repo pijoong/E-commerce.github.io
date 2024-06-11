@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Styles - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe0b2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff3e0;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover{
+            color: #ff6600;
+        }
+        .login-form {
+            position: absolute;
+            right: 0px;
+            width: 20%;
+            height: 30%;
+            top:255px;
+            transform: translateY(-50%);
+            background-color: #fff3e0;
+            padding: 180px;
+            border-radius: 5px;
+            border: 2px solid black;    
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom:10px;
+            margin-top: 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-form input[type="submit"] {
+            width: 290px;
+            padding: 10px;
+            background-color: #ff6600;
+            margin-top: 20px;
+            margin-left: 0;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-form p{
+            text-align: center;
+            font-size: 28px;
+            font-weight: bolder;
+            font-family: sans-serif;
+            margin-top: -30px;
+        }
+        .login-form input[type="submit"]:hover {
+            background-color: black;
+        }
+
+
+        main {
+            text-align: center;
+            padding: 20px;
+            position: relative; 
+        }
+
+        .welcome-section {
+            text-align: left;
+            display: inline-block;
+            vertical-align: top;
+            width: 100%; 
+        }
+
+        .welcome-section h1 {
+            font-size: 110px;
+            color: #ff6600;
+            margin-bottom: 15px;
+        }
+
+        .welcome-section p {
+            font-size: 40px;
+            color: #ff6600;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="image.png.png" width="120" height="70"></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="community.html">Community</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="login-form">
+            <p>LOGIN</p>
+            <form action="shirt.html" method="post">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <div class="welcome-section">
+            <h1>Welcome to <br> North Styles!</h1>
+            <p>"A style that meets convenience"</p>
+        </div>
+        
+    </main>
+</body>
+</html>
